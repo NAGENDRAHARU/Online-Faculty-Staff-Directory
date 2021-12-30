@@ -1,12 +1,11 @@
 body {
-      margin:0;
-      background-image: url('vladstudio.jpg');
-	  background-size:1920px 1080px;
-    position: absolute;
+   margin:0;
+   background-image: url('vladstudio.jpg');
+   background-size: cover;
+   position: absolute;
     }
- .navbar {
+.navbar {
   overflow: hidden;
-  background-color:transparent;
   position: fixed;
   top: 0;
   width: 100%;
