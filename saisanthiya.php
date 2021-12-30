@@ -13,7 +13,8 @@ if($_SESSION['status']!="Active")
 body
 {
 	background-image:url("back.jpg");
-	background-size:1280px 720px;
+	background-size: cover;
+
 }
 table,th,td
 {
