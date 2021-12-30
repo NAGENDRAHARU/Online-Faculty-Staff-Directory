@@ -84,7 +84,7 @@ body
  <div class="topnav-right">
  <a href="logout.php">Logout</a>
  </div>
-</div>'
+</div>
 	<div align="center" class='heading'>
 	<center>
 		<h1 style='color:#3498db'>Discover Faculty With Great Profile</h1>
