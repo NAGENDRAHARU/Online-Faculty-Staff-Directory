@@ -29,7 +29,6 @@ echo '<head>
 </head>
 <div class="navbar">
  <a href="index.php">Home</a>
- <a href="#news">News</a>
  <a href="#contact">Contact</a>
  <div class="topnav-right">
  <a href="Signup1.php">Signup</a>
