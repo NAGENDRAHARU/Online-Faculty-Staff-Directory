@@ -14,7 +14,7 @@ body
 {
 	font-family:serif;
 	background-image:url("back.jpg");
-	background-size:1280px 720px;
+	background-size: cover;
 }
 .wrap
 {
