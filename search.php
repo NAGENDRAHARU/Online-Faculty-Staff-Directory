@@ -1,10 +1,10 @@
 <?php
 session_start();
-require 'nav.php'
 if($_SESSION['status']!="Active")
 {
     header("location:login1.php");
 }
+require 'nav.php'
 ?>
 <html>
 <head>
