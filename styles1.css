@@ -29,7 +29,6 @@
 	width:430px;
 	margin:0 auto;
 	padding:10px;
-	border-radius:65px;
 }
 #login_btn
 {
@@ -40,7 +39,6 @@
 	text-align:center;
 	font-size:18px;
 	font-weight:bold;
-	border-radius:65px;
 }
 #register_btn
 {
@@ -51,5 +49,4 @@
 	text-align:center;
 	font-size:18px;
 	font-weight:bold;
-	border-radius:65px;
 }
