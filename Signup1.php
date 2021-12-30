@@ -16,7 +16,7 @@
 <body id="bod">
 <div id="first">
 <center>
-<h1>SignUp Page</h1>
+<h1>SignUp</h1>
 <img src="faculty.png" class="avatar"/>
 </center>
 <form class="myform" action="Signup1.php" method="post" name='loginform'>
