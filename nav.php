@@ -7,6 +7,7 @@ echo '<head>
   top: 0;
   width: 100%;
   border-radius:5px;
+  color: #3498db;
   }
 .navbar a {
   float: left;
