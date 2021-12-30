@@ -28,7 +28,7 @@ function validateForm()
 <body id="bod">
 <div id="first">
 <center>
-<h1>Login Page</h1>
+<h1>Login</h1>
 <img src="download.png" class="avatar"/>
 </center>
 <form name="myForm" action="login1.php" method="post" class="myform" onsubmit="return validateForm()">
