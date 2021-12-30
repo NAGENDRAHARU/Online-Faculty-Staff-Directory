@@ -13,6 +13,14 @@
     };
 </script>
 </head>
+<div class="navbar">
+ <a href="index.php">Home</a>
+ <a href="#contact">Contact</a>
+ <div class="topnav-right">
+ <a href="Signup1.php">Signup</a>
+ <a href="login1.php">Login</a>
+ </div>
+</div>
 <body id="bod">
 <div id="first">
 <center>
