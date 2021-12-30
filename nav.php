@@ -3,7 +3,6 @@ echo '<head>
 <style>
 .navbar {
   overflow: hidden;
-  background-color:transparent;
   position: fixed;
   top: 0;
   width: 100%;
