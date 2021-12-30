@@ -79,10 +79,7 @@ body
 </style>
 </head>
 <body>
-	<?php
-	echo $_SESSION['username'];
-	?>
-	<div class="navbar">
+<div class="navbar">
  <a href="#contact">Contact</a>
  <div class="topnav-right">
  <a href="logout.php">Logout</a>
