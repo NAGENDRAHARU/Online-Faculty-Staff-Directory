@@ -29,7 +29,7 @@ echo '<head>
 </style>
 </head>
 <div class="navbar">
- <a href="Home.php">Home</a>
+ <a href="index.php">Home</a>
  <a href="#news">News</a>
  <a href="#contact">Contact</a>
  <div class="topnav-right">
