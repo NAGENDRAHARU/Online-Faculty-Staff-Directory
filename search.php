@@ -52,9 +52,6 @@ body
 	font-size:20px;
 }
 </style>
-<script type="text/javascript">
-
-</script>
 </head>
 <body>
 <div class="navbar">
@@ -78,5 +75,11 @@ body
 </div>
 </div>
 </form>
+<?php
+if(isset($_GET['submit']))
+{
+$_SESSION['search'] = $search;
+}
+?>
 </body>
 </html>

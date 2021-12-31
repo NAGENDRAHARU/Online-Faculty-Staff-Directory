@@ -1,10 +1,11 @@
 <?php
 session_start();
+require 'dbconfig/config.php';
+require 'nav.php'
 if($_SESSION['status']!="Active")
 {
     header("location:login1.php");
 }
-require 'nav.php'
 $search = $_GET['search'];
 $query = "select * from professors where name='$search'";
 $query_run = mysqli_query($con,$query);
