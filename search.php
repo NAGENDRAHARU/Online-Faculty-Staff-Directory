@@ -50,6 +50,7 @@ body
 	cursor:pointer;
 	font-size:20px;
 }
+<?php require 'nav.php'; ?>
 </style>
 </head>
 <body>

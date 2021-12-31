@@ -1,7 +1,5 @@
-<?php 
-echo '<head>
-<style>
-.navbar {
+<?php
+echo '.navbar {
   overflow: hidden;
   top: 0;
   width: 100%;
@@ -24,7 +22,5 @@ echo '<head>
   }
 .topnav-right {
   float: right;
-}
-</style>
-</head>'
+}'
 ?>

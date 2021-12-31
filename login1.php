@@ -1,13 +1,15 @@
 <?php
 session_start();
 require 'dbconfig/config.php';
-require 'nav.php'
 ?>
 <!doctype html>
 <html>
 <head>
 <title>Login</title>
 <link rel="stylesheet" href="css/styles.css">
+<style media="screen">
+	<?php require 'nav.php'; ?>
+</style>
 <script>
 function validateForm()
 {
