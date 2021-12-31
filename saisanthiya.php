@@ -17,7 +17,7 @@ if(mysqli_num_rows($query_run)>0){
   <style>
   body
   {
-  	background-image:url("img/back.jpg");
+  	background-image:url("/img/back.jpg");
   	background-size: cover;
   }
   table,th,td

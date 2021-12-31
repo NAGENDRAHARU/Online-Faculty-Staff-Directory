@@ -6,7 +6,7 @@ require 'nav.php';
 <html>
 <head>
 <title>Home</title>
-<link rel="stylesheet" href="homecss.css">
+<link rel="stylesheet" href="css/homecss.css">
 </head>
 <body>
 <div class="navbar">

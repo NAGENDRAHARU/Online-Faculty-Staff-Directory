@@ -22,12 +22,13 @@
 {
 	width:450px;
 	margin:0 auto;
+	padding:10px;
 }
 .inputvalues
 {
+	width:100%;
 	margin:0 auto;
 	padding:10px;
-	width:100%;
 }
 #login_btn
 {
