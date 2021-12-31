@@ -5,6 +5,7 @@ if($_SESSION['status']!="Active")
     header("location:login1.php");
 }
 require 'nav.php'
+$_SESSION['search'] = $search;
 ?>
 <html>
 <head>
@@ -14,7 +15,7 @@ require 'nav.php'
 body
 {
 	font-family:serif;
-	background-image:url("back.jpg");
+	background-image:url("img/back.jpg");
 	background-size: cover;
 }
 .wrap
@@ -52,6 +53,9 @@ body
 	font-size:20px;
 }
 </style>
+<script type="text/javascript">
+
+</script>
 </head>
 <body>
 <div class="navbar">
@@ -65,14 +69,15 @@ body
 		<h1 style='color:#3498db'>Discover Faculty With Great Profile</h1>
 	</center>
 </div>
+<form action="saisanthiya.php" method="get">
 <div class="wrap">
 <div class="search">
 <input type="text" class="searchterm" name="search" placeholder="Whom are you looking for ?" required>
 <button type="submit" class="searchbtn">
-	<a href="saisanthiya.php"></a>
 <i class="fa fa-search"></i>
 </button>
 </div>
 </div>
+</form>
 </body>
 </html>

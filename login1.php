@@ -7,7 +7,7 @@ require 'nav.php'
 <html>
 <head>
 <title>Login</title>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="css/styles.css">
 <script>
 function validateForm()
 {
@@ -37,7 +37,7 @@ function validateForm()
 <div id="first">
 <center>
 <h1>Login</h1>
-<img src="download.png" class="avatar"/>
+<img src="img/download.png" class="avatar"/>
 </center>
 <form name="myForm" action="login1.php" method="post" class="myform" onsubmit="return validateForm()">
 <label><b>Username:</b></label><br>
@@ -65,7 +65,6 @@ function validateForm()
 				$_SESSION['username']=$username;
 				$_SESSION['status']="Active";
 				header('location:search.php');
-
 			}
 			else
 			{

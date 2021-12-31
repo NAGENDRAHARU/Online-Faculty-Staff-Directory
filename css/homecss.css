@@ -1,6 +1,6 @@
 body {
    margin:0;
-   background-image: url('back.jpg');
+   background-image: url('img/back.jpg');
    background-size: cover;
    position: absolute;
     }
@@ -124,11 +124,11 @@ body {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .4}
   to {opacity: 1}
 }

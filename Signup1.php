@@ -6,7 +6,7 @@
 <html>
 <head>
 <title>SignUp</title>
-<link rel="stylesheet" href="styles1.css">
+<link rel="stylesheet" href="css/styles1.css">
 <script type="text/javascript">
 	 document.getElementById("register_btn").onclick = function () {
         location.href = "/login1.php";
@@ -25,7 +25,7 @@
 <div id="first">
 <center>
 <h1>SignUp</h1>
-<img src="faculty.png" class="avatar"/>
+<img src="img/faculty.png" class="avatar"/>
 </center>
 <form class="myform" action="Signup1.php" method="post" name='loginform'>
 <label><b>Username:</b></label><br>
@@ -66,7 +66,7 @@
 				$email=$_POST['Email'];
 				$password=$_POST['password'];
 				$cpassword=$_POST['cpassword'];
-				
+
 				if($password==$cpassword)
 				{
 					$query = "select * from users where username='$username'";
@@ -88,7 +88,7 @@
 							}
 							if($query_run)
 							{
-								header('location:login1.php');				
+								header('location:login1.php');
 							}
 							else
 							{
@@ -105,7 +105,7 @@
 				{
 					echo '<script type="text/javascript">alert("Password and Confirm Password do not match")</script>';
 				}
-				
+
 			}
 		?>
 </body>
