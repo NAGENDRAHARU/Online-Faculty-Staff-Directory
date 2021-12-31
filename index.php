@@ -20,7 +20,7 @@ require 'nav.php';
 <div class="title">
 <center>
 <h1>
-ONLINE FACULTY STAFF DIRECTORY
+SRM FACULTY STAFF DIRECTORY
 </h1>
 </center>
 <div class="slideshow-container">
@@ -28,19 +28,19 @@ ONLINE FACULTY STAFF DIRECTORY
   <!-- Full-width images with number and caption text -->
   <div class="mySlides fade">
     <div class="numbertext">1 / 3</div>
-    <img src="1.jpeg" style="width:100%">
+    <img src="1.jpeg" style="width:100%; height: 100%;">
     <div class="text">Caption Text</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">2 / 3</div>
-    <img src="2.jpeg" style="width:100%">
+    <img src="2.jpeg" style="width:100%; height: 100%;">
     <div class="text">Caption Two</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">3 / 3</div>
-    <img src="3.jpeg" style="width:100%">
+    <img src="3.jpeg" style="width:100%; height: 100%;">
     <div class="text">Caption Three</div>
   </div>
 
