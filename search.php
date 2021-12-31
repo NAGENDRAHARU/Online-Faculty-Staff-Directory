@@ -78,7 +78,8 @@ body
 <?php
 if(isset($_GET['submit']))
 {
-$_SESSION['search'] = $search;
+$name = $_GET['search'];
+$_SESSION['search'] = $name;
 }
 ?>
 </body>
