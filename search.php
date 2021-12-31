@@ -78,8 +78,5 @@ body
 </div>
 </div>
 </form>
-<?php
-$_SESSION['search'] = $search;
-?>
 </body>
 </html>
