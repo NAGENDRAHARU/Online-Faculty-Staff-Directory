@@ -2,6 +2,8 @@
 session_start();
 require 'dbconfig/config.php';
 require 'nav.php'
+?>
+<?php
 if($_SESSION['status']!="Active")
 {
     header("location:login1.php");
