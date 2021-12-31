@@ -75,12 +75,5 @@ body
 </div>
 </div>
 </form>
-<?php
-if(isset($_GET['submit']))
-{
-$name = $_GET['search'];
-$_SESSION['search'] = $name;
-}
-?>
 </body>
 </html>
