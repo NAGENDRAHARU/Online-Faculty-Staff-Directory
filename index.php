@@ -40,6 +40,9 @@ SRM FACULTY STAFF DIRECTORY
     <div class="numbertext">3 / 3</div>
     <img src="3.jpeg" style="width:100%; height: 100%;">
   </div>
+ <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
 <br>
 <p style='color:black'>
