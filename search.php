@@ -1,6 +1,5 @@
 <?php
 session_start();
-require 'nav.php'
 if($_SESSION['status']!="Active")
 {
     header("location:login1.php");
@@ -75,5 +74,12 @@ body
 </div>
 </div>
 </form>
+<?php
+if(isset($_GET['submit']))
+{
+$name = $_GET['search'];
+$_SESSION['search'] = $name;
+}
+?>
 </body>
 </html>
