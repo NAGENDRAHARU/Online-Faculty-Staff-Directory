@@ -103,7 +103,7 @@ if(isset($_GET['submit']))
 {
 $name = $_GET['search'];
 $_SESSION['search'] = $name;
-echo '<script type="text/javascript">alert("success")</script>';
+echo '<script type="text/javascript">alert('."$name".')</script>';
 }
 ?>
 </body>
