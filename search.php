@@ -108,8 +108,9 @@ body
 <?php
 if(isset($_GET['submit']))
 {
+$name = $_GET['search'];
+$_SESSION['search'] = $name;
 header('location:faculty.php');
-}
 }
 ?>
 </body>
