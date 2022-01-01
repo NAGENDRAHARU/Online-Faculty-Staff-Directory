@@ -1,6 +1,4 @@
 <?php
-error_reporting(E_ALL);
-ini_set("display_errors", 1);
 session_start();
 require 'dbconfig/config.php';
 if($_SESSION['status']!="Active")
@@ -119,7 +117,7 @@ if(mysqli_num_rows($query_run)>0){
   </table>
   </div>
   </body>
-'
+';
 }
 else {
   echo '<script type="text/javascript">alert("No search results found..")</script>';
