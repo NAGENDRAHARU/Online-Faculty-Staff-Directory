@@ -88,7 +88,7 @@ body
 		<h1 style='color:#3498db'>Discover Faculty With Great Profile</h1>
 	</center>
 </div>
-<form action="saisanthiya.php" method="get">
+<form action="" method="get">
 <div class="wrap">
 <div class="search">
 <input type="text" class="searchterm" name="search" placeholder="Whom are you looking for ?" required>
