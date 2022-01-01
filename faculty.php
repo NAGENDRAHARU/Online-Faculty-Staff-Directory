@@ -1,10 +1,15 @@
 <?php
 session_start();
+require 'dbconfig/config.php';
 if($_SESSION['status']!="Active")
 {
     header("location:login.php");
 }
-$rows=mysqli_fetch_array($_SESSION['run']);
+$search = $_SESSION['search'];
+$query = "select * from professors where name like '%$search%'";
+echo $query;
+$query_run = mysqli_query($con,$query);
+$rows=mysqli_fetch_array($query_run);
 echo '<!DOCTYPE html>
 <html>
 <head>
