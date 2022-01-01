@@ -105,7 +105,7 @@ return data.filter((item) => {
 <form action="faculty.php" method="get">
   <div class="input-group wrap">
     <div id="search-autocomplete" class="search form-outline">
-      <input type="search" name="search" id="form1" class="searchterm form-control" />
+      <input type="text" name="search" id="form1" class="searchterm form-control" />
       <label class="form-label" for="form1">Search</label>
     </div>
     <button type="submit" name="submit" class="btn btn-primary searchbtn">
