@@ -1,7 +1,6 @@
-<?php phpinfo(); ?>
 <?php
-require 'dbconfig/config.php';
 session_start();
+require 'dbconfig/config.php';
 if($_SESSION['status']!="Active")
 {
     header("location:login.php");
@@ -104,15 +103,15 @@ if(mysqli_num_rows($query_run)>0){
   <td colspan="4"><b>Other Details:</b><br>
   	<br>
   	<b>Research Interests:</b><br>
-      '->.$rows["interests"].'
+      '.'->'.$rows["interests"].'
   	<b>Selected Publications:</b><br>
-  	  '->.$rows["publications"].'
+  	  '.'->'.$rows["publications"].'
   	<b>Academic Experience</b><br>
-  	  '->.$rows["experience"].'
+  	  '.'->'.$rows["experience"].'
   	<b>Organized Conference/workshop/seminar:</b><br>
-  	  '->.$rows["workshop"].'
+  	  '.'->'.$rows["workshop"].'
   	<b>Workshop Attended:</b><br>
-  	  '->.$rows["attended"].'
+  	  '.'->'.$rows["attended"].'
   </td>
   </tr>
   </table>
