@@ -24,29 +24,30 @@ function validateForm()
 }
 </script>
 </head>
-<div class="navbar">
- <a href="index.php">Home</a>
- <a href="#contact">Contact</a>
- <div class="topnav-right">
- <a href="signup.php">Signup</a>
- <a href="login.php">Login</a>
- </div>
-</div>
 <body>
-<div id="first">
-<center>
-<h1>Login</h1>
-<img src="img/download.png" class="avatar"/>
-</center>
-<form name="myForm" action="login.php" method="post" class="myform" onsubmit="return validateForm()">
-<label><b>Username:</b></label><br>
-<input type="text" name="username" class="inputvalues" placeholder="Type your Username" value="<?php if(isset($_COOKIE["Name"])){ echo $_COOKIE["Name"];}?>"><br>
-<br><label><b>Password:</b></label><br>
-<input type="password" name="password" class="inputvalues" placeholder="Type your Password" value="<?php if(isset($_COOKIE["Password"])){echo $_COOKIE["Password"];}?>"><br><br>
-<input type="submit" name="submit" value="Login" id="login_btn" ><br>
-<b>New User?</b>
-<br><a href="signup.php"><input type="button" name="register" value="Register" id="register_btn"></a>
-</form>
+<div class="banner">
+	<div class="navbar">
+		<img src="img/logo.png" class="logo">
+		<ul>
+			<li><a href="login.php">Login</a></li>
+			<li><a href="signup.php">Signup</a></li>
+		</ul>
+	</div>
+	<div id="first">
+	<center>
+	<h1>Login</h1>
+	<img src="img/download.png" class="avatar"/>
+	</center>
+	<form name="myForm" action="login.php" method="post" class="myform" onsubmit="return validateForm()">
+	<label><b>Username:</b></label><br>
+	<input type="text" name="username" class="inputvalues" placeholder="Type your Username" value="<?php if(isset($_COOKIE["Name"])){ echo $_COOKIE["Name"];}?>"><br>
+	<br><label><b>Password:</b></label><br>
+	<input type="password" name="password" class="inputvalues" placeholder="Type your Password" value="<?php if(isset($_COOKIE["Password"])){echo $_COOKIE["Password"];}?>"><br><br>
+	<input type="submit" name="submit" value="Login" id="login_btn" ><br>
+	<b>New User?</b>
+	<br><a href="signup.php"><input type="button" name="register" value="Register" id="register_btn"></a>
+	</form>
+	</div>
 </div>
 <?php
 		if(isset($_POST['submit']))
