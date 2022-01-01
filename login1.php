@@ -6,7 +6,6 @@ require 'dbconfig/config.php';
 <html>
 <head>
 <title>Login</title>
-<style> <?php require 'nav.php';?> </style>
 <link rel="stylesheet" href="css/styles.css">
 <script>
 function validateForm()

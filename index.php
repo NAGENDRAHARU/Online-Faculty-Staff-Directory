@@ -5,7 +5,6 @@ session_start();
 <html>
 <head>
 <title>Home</title>
-<style><?php require 'nav.php';?></style>
 <link rel="stylesheet" href="css/homecss.css">
 </head>
 <body>

@@ -6,9 +6,6 @@
 <head>
 <title>SignUp</title>
 <link rel="stylesheet" href="css/styles1.css">
-<style media="screen">
-		<?php require 'nav.php'; ?>
-</style>
 <script type="text/javascript">
 	 document.getElementById("register_btn").onclick = function () {
         location.href = "/login1.php";
