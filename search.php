@@ -92,7 +92,7 @@ body
 <div class="wrap">
 <div class="search">
 <input type="text" class="searchterm" name="search" placeholder="Whom are you looking for ?" required>
-<button type="submit" class="searchbtn">
+<button type="submit" name="submit" class="searchbtn">
 <i class="fa fa-search"></i>
 </button>
 </div>
