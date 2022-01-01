@@ -7,8 +7,14 @@ if($_SESSION['status']!="Active")
 ?>
 <html>
 <head>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <title>Search</title>
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+<!-- MDB -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.css" rel="stylesheet"/>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.js"></script>
 <style>
 body
 {
@@ -76,6 +82,19 @@ body
 }
 </style>
 </head>
+<script type="text/javascript">
+const basicAutocomplete = document.querySelector('#search-autocomplete');
+const data = ['One', 'Two', 'Three', 'Four', 'Five'];
+const dataFilter = (value) => {
+return data.filter((item) => {
+  return item.toLowerCase().startsWith(value.toLowerCase());
+});
+};
+
+new mdb.Autocomplete(basicAutocomplete, {
+filter: dataFilter
+});
+</script>
 <body>
 <div class="navbar">
  <a href="#contact">Contact</a>
@@ -88,15 +107,16 @@ body
 		<h1 style='color:#3498db'>Discover Faculty With Great Profile</h1>
 	</center>
 </div>
-<form action="saisanthiya.php" method="get">
-<div class="wrap">
-<div class="search">
-<input type="text" class="searchterm" name="search" placeholder="Whom are you looking for ?" required>
-<button type="submit" name="submit" class="searchbtn">
-<i class="fa fa-search"></i>
-</button>
-</div>
-</div>
+<form action="faculty.php" method="get">
+  <div class="input-group">
+    <div id="search-autocomplete" class="form-outline">
+      <input type="search" id="form1" class="form-control" />
+      <label class="form-label" for="form1">Search</label>
+    </div>
+    <button type="button" class="btn btn-primary">
+      <i class="fas fa-search"></i>
+    </button>
+  </div>
 </form>
 <?php
 if(isset($_GET['submit']))

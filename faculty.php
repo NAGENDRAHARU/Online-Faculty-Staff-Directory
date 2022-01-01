@@ -102,15 +102,15 @@ if(mysqli_num_rows($query_run)>0){
   <tr>
   <td colspan="4"><b>Other Details:</b><br>
   	<br><b>Research Interests:</b><br>
-      '.'->'.$rows["interests"].'
+      '.'-> '.$rows["interests"].'
   	<br><b>Selected Publications:</b><br>
-  	  '.'->'.$rows["publications"].'
+  	  '.'-> '.$rows["publications"].'
   	<br><b>Academic Experience</b><br>
-  	  '.'->'.$rows["experience"].'
+  	  '.'-> '.$rows["experience"].'
   	<br><b>Organized Conference/workshop/seminar:</b><br>
-  	  '.'->'.$rows["workshop"].'
+  	  '.'-> '.$rows["workshop"].'
   	<br><b>Workshop Attended:</b><br>
-  	  '.'->'.$rows["attended"].'
+  	  '.'-> '.$rows["attended"].'
   </td>
   </tr>
   </table>
