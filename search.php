@@ -80,7 +80,15 @@ body
 .topnav-right {
   float: right;
 }
+.results{
+
+}
 </style>
+<script type="text/javascript">
+  function search(name){
+    console.log(name);
+  }
+</script>
 </head>
 <body>
 <div class="navbar">
@@ -97,7 +105,7 @@ body
 <form action="search.php" method="get">
   <div class="input-group wrap">
     <div id="search-autocomplete" class="search form-outline">
-      <input type="text" name="search" id="form1" class="searchterm form-control" required/>
+      <input type="text" name="search" id="form1" class="searchterm form-control" oninput=search(this.value) required/>
       <label class="form-label" for="form1">Search</label>
     </div>
     <button type="submit" name="submit" class="btn btn-primary searchbtn">
