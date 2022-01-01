@@ -88,7 +88,7 @@ body
 		<h1 style='color:#3498db'>Discover Faculty With Great Profile</h1>
 	</center>
 </div>
-<form action="" method="get">
+<form action="saisanthiya.php" method="get">
 <div class="wrap">
 <div class="search">
 <input type="text" class="searchterm" name="search" placeholder="Whom are you looking for ?" required>
@@ -103,7 +103,6 @@ if(isset($_GET['submit']))
 {
 $name = $_GET['search'];
 $_SESSION['search'] = $name;
-echo $name;
 }
 ?>
 </body>
