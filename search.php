@@ -2,7 +2,7 @@
 session_start();
 if($_SESSION['status']!="Active")
 {
-    header("location:login1.php");
+    header("location:login.php");
 }
 ?>
 <html>
@@ -12,8 +12,8 @@ if($_SESSION['status']!="Active")
 <style>
 body
 {
-	font-family:serif;
-	background-image:url("img/back.jpg");
+	font-family: serif;
+	background-image: url("img/back.jpg");
 	background-size: cover;
 }
 .wrap
@@ -92,7 +92,7 @@ body
 <div class="wrap">
 <div class="search">
 <input type="text" class="searchterm" name="search" placeholder="Whom are you looking for ?" required>
-<button type="submit" class="searchbtn">
+<input type="submit" class="searchbtn">
 <i class="fa fa-search"></i>
 </button>
 </div>
