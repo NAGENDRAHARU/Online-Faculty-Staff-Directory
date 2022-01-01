@@ -71,6 +71,6 @@ function validateForm()
 			}
 		}
 		}
-	?>
+?>
 </body>
 </html>
