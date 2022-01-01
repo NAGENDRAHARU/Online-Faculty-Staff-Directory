@@ -106,7 +106,7 @@ if($_SESSION['status']!="Active")
 		<img src="img/logo.png" class="logo">
 		<ul>
 			<li><a href="index.php">Home</a></li>
-			<li><a href="signup.php">Signup</a></li>
+			<li><a href="logout.php">Logout</a></li>
 		</ul>
 	</div>
  <div align="center" class='heading'>

@@ -14,10 +14,10 @@ echo '<!DOCTYPE html>
 <head>
 <title>'.$rows["name"].'</title>
 <style>
-body
-{
-	background-image:url("/img/back.jpg");
-	background-size: cover;
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 table,th,td
 {
@@ -33,38 +33,59 @@ table
 {
 	border-spacing: 5px;
 }
-.navbar {
-  overflow: hidden;
-  top: 0;
+.banner{
   width: 100%;
-  border-radius:5px;
-  color: #3498db;
-  }
-.navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  border-radius:15px;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("/img/background.jpg");
+  background-size: cover;
+  background-position: center;
 }
-.navbar a:hover {
-  background: #ddd;
-  color: black;
-  }
-.topnav-right {
-  float: right;
+.navbar{
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo{
+   width: 120px;
+   cursor: pointer;
+}
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+.navbar ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #3498db;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.navbar ul li:hover::after{
+  width: 100%;
 }
 </style>
 </head>
 <body>
-	<div class="navbar">
- <a href="#contact">Contact</a>
- <div class="topnav-right">
- <a href="logout.php">Logout</a>
- </div>
+<div class="banner">
+<div class="navbar">
+  <img src="img/logo.png" class="logo">
+  <ul>
+    <li><a href="index.php">Home</a></li>
+    <li><a href="signup.php">Signup</a></li>
+  </ul>
 </div>
 <br><br><br>
 <div align="center">
@@ -113,6 +134,7 @@ table
 </td>
 </tr>
 </table>
+</div>
 </div>
 </body>
 ';
