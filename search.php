@@ -110,7 +110,14 @@ if(isset($_GET['submit']))
 {
 $name = $_GET['search'];
 $_SESSION['search'] = $name;
+$query = "select * from professors where name like '%$name%'";
+$query_run = mysqli_query($con,$query);
+if(mysqli_num_rows($query_run) > 0){
 header('location:faculty.php');
+}
+else{
+  echo '<script type="text/javascript">alert("No search results found..")</script>';
+}
 }
 ?>
 </body>
