@@ -32,7 +32,7 @@ function validateForm()
  <a href="login.php">Login</a>
  </div>
 </div>
-<body id="bod">
+<body>
 <div id="first">
 <center>
 <h1>Login</h1>
