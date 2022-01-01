@@ -118,7 +118,7 @@ if(isset($_GET['submit']))
 {
 $name = $_GET['search'];
 $_SESSION['search'] = $name;
-echo $_SESSION['search'];
+echo '<script type="text/javascript">alert("'.$_SESSION['search'].'")</script>';
 }
 ?>
 </body>
