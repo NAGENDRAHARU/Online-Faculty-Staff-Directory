@@ -71,7 +71,7 @@ if(mysqli_num_rows($query_run)>0){
   <div align="center">
   <table>
   <tr>
-  <td colspan="1"><img src="'.$rows["no"].'.jpg"><td>
+  <td colspan="1"><img src="facultyimg/'.$rows["no"].'.jpg"><td>
   <td colspan="2">
   	<b>'.$rows["name"].'</b><br>
   	'.$rows["designation"].'<br>
@@ -101,16 +101,15 @@ if(mysqli_num_rows($query_run)>0){
   </tr>
   <tr>
   <td colspan="4"><b>Other Details:</b><br>
-  	<br>
-  	<b>Research Interests:</b><br>
+  	<br><b>Research Interests:</b><br>
       '.'->'.$rows["interests"].'
-  	<b>Selected Publications:</b><br>
+  	<br><b>Selected Publications:</b><br>
   	  '.'->'.$rows["publications"].'
-  	<b>Academic Experience</b><br>
+  	<br><b>Academic Experience</b><br>
   	  '.'->'.$rows["experience"].'
-  	<b>Organized Conference/workshop/seminar:</b><br>
+  	<br><b>Organized Conference/workshop/seminar:</b><br>
   	  '.'->'.$rows["workshop"].'
-  	<b>Workshop Attended:</b><br>
+  	<br><b>Workshop Attended:</b><br>
   	  '.'->'.$rows["attended"].'
   </td>
   </tr>
