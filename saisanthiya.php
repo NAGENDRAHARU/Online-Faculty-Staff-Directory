@@ -85,19 +85,19 @@ if(mysqli_num_rows($query_run)>0){
   </tr>
   <tr>
   <td colspan="2">
-  '.split(",", $rows["edu1"])[0].'
+  '.explode(",", $rows["edu1"])[0].'
   </td>
   <td>
-  '.split(",", $rows["edu1"])[1].'
+  '.explode(",", $rows["edu1"])[1].'
   </td>
   <td>
-  '.split(",", $rows["edu1"])[2].'
+  '.explode(",", $rows["edu1"])[2].'
   </td>
   </tr>
   <tr>
-  <td colspan="2">'.split(",", $rows["edu2"])[0].'</td>
-  <td>'.split(",", $rows["edu2"])[1].'</td>
-  <td>'.split(",", $rows["edu2"])[2].'</td>
+  <td colspan="2">'.explode(",", $rows["edu2"])[0].'</td>
+  <td>'.explode(",", $rows["edu2"])[1].'</td>
+  <td>'.explode(",", $rows["edu2"])[2].'</td>
   </tr>
   <tr>
   <td colspan="4"><b>Other Details:</b><br>
