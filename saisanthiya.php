@@ -6,7 +6,7 @@ if($_SESSION['status']!="Active")
     header("location:login.php");
 }
 $search = $_SESSION['search'];
-$query = "select * from professors where name='$search'";
+$query = "select * from professors where name='%$search%'";
 $query_run = mysqli_query($con,$query);
 if(mysqli_num_rows($query_run)>0){
   $rows=mysqli_fetch_array($query_run);
