@@ -27,7 +27,7 @@ body
 {
 	position:absolute;
 	width:30%;
-	top:50%;
+	top:30%;
 	left:50%;
 	transform:translate(-50%,-50%);
 }
@@ -103,6 +103,12 @@ body
     <button type="submit" name="submit" class="btn btn-primary searchbtn">
       <i class="fas fa-search"></i>
     </button>
+    <ul class="results">
+      <?php $data = mysqli_fetch_array(mysqli_query($con,"select name from professors"));?>
+      <?php foreach($data as $i){?>
+      <li><?php echo $i["name"]?></li>
+      <?php }?>
+    </ul>
   </div>
 </form>
 <?php
