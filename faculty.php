@@ -8,6 +8,7 @@ if($_SESSION['status']!="Active")
 $search = $_SESSION['search'];
 $query = "select * from professors where name like '%$search%'";
 echo $query;
+echo $_SESSION['row'];
 $query_run = mysqli_query($con,$query);
 $rows=mysqli_fetch_array($query_run);
 echo '<!DOCTYPE html>
