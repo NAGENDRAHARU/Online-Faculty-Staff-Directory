@@ -45,13 +45,13 @@ body {
   max-width: 1000px;
   position: relative;
   margin: auto;
+  height: 100%;
+  width: 100%;
 }
 
 /* Hide the images by default */
 .mySlides {
   display: none;
-  height: 100%;
-  width: 100%;
 }
 
 /* Next & previous buttons */
