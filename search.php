@@ -114,7 +114,8 @@ return data.filter((item) => {
   </div>
 </form>
 <?php
-echo '<script type="text/javascript">alert("'.echo isset($_GET['submit']).'")</script>';
+$a = echo isset($_GET['submit']);
+echo '<script type="text/javascript">alert("'.$a.'")</script>';
 if(isset($_GET['submit']))
 {
 $name = $_GET['search'];
