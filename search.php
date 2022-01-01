@@ -108,12 +108,12 @@ filter: dataFilter
 	</center>
 </div>
 <form action="faculty.php" method="get">
-  <div class="input-group">
-    <div id="search-autocomplete" class="form-outline">
-      <input type="search" id="form1" class="form-control" />
+  <div class="input-group wrap">
+    <div id="search-autocomplete" class="search form-outline">
+      <input type="search" name="search" id="form1" class="searchterm form-control" />
       <label class="form-label" for="form1">Search</label>
     </div>
-    <button type="button" class="btn btn-primary">
+    <button type="submit" name="submit" class="btn btn-primary searchbtn">
       <i class="fas fa-search"></i>
     </button>
   </div>
