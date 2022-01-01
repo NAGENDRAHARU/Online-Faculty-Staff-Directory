@@ -111,6 +111,7 @@ if(isset($_GET['submit']))
 $name = $_GET['search'];
 $query = "select * from professors where name like '%$search%'";
 $query_run = mysqli_query($con,$query);
+echo mysqli_num_rows($query_run);
 if(mysqli_num_rows($query_run)>0){
   $_SESSION['search'] = $name;
   header('location:faculty.php');
