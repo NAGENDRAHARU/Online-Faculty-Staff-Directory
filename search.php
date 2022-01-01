@@ -1,5 +1,6 @@
 <?php
 session_start();
+require 'dbconfig/config.php';
 if($_SESSION['status']!="Active")
 {
     header("location:login.php");
@@ -80,15 +81,6 @@ body
   float: right;
 }
 </style>
-<script type="text/javascript">
-const basicAutocomplete = document.querySelector('#search-autocomplete');
-const data = ['One', 'Two', 'Three', 'Four', 'Five'];
-const dataFilter = (value) => {
-return data.filter((item) => {
-  return item.toLowerCase().startsWith(value.toLowerCase());
-});
-};
-</script>
 </head>
 <body>
 <div class="navbar">
@@ -118,7 +110,15 @@ if(isset($_GET['submit']))
 {
 $name = $_GET['search'];
 $_SESSION['search'] = $name;
-echo $_SESSION['search'];
+$query = "select * from professors where name like '%$search%'";
+$query_run = mysqli_query($con,$query);
+if(mysqli_num_rows($query_run)>0){
+  $_SESSION['run'] = $query_run;
+  header('location:faculty.php');
+}
+else {
+  echo '<script type="text/javascript">alert("No search results found..")</script>';
+}
 }
 ?>
 </body>
