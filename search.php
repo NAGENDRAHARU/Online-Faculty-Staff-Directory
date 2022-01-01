@@ -32,7 +32,7 @@ body
 }
 .search
 {
-	width:100%;
+	width:80%;
 	position:relative;
   background-color: #fff;
 }
@@ -48,8 +48,6 @@ body
 .searchbtn
 {
 	position:absolute;
-	width:50px;
-	height:47.5px;
 	border:1px solid #00B4CC;
 	background-color:#00B4CC;
 	text-align:center;
@@ -82,6 +80,15 @@ body
   float: right;
 }
 </style>
+<script type="text/javascript">
+const basicAutocomplete = document.querySelector('#search-autocomplete');
+const data = ['One', 'Two', 'Three', 'Four', 'Five'];
+const dataFilter = (value) => {
+return data.filter((item) => {
+  return item.toLowerCase().startsWith(value.toLowerCase());
+});
+};
+</script>
 </head>
 <body>
 <div class="navbar">
@@ -106,15 +113,6 @@ body
     </button>
   </div>
 </form>
-<script type="text/javascript">
-const basicAutocomplete = document.querySelector('#search-autocomplete');
-const data = ['One', 'Two', 'Three', 'Four', 'Five'];
-const dataFilter = (value) => {
-return data.filter((item) => {
-  return item.toLowerCase().startsWith(value.toLowerCase());
-});
-};
-</script>
 <?php
 if(isset($_GET['submit']))
 {
