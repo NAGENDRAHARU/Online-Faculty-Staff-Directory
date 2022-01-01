@@ -34,6 +34,7 @@ body
 {
 	width:100%;
 	position:relative;
+  background-color: #fff;
 }
 .searchterm
 {
@@ -82,19 +83,6 @@ body
 }
 </style>
 </head>
-<script type="text/javascript">
-const basicAutocomplete = document.querySelector('#search-autocomplete');
-const data = ['One', 'Two', 'Three', 'Four', 'Five'];
-const dataFilter = (value) => {
-return data.filter((item) => {
-  return item.toLowerCase().startsWith(value.toLowerCase());
-});
-};
-
-new mdb.Autocomplete(basicAutocomplete, {
-filter: dataFilter
-});
-</script>
 <body>
 <div class="navbar">
  <a href="#contact">Contact</a>
@@ -118,6 +106,15 @@ filter: dataFilter
     </button>
   </div>
 </form>
+<script type="text/javascript">
+const basicAutocomplete = document.querySelector('#search-autocomplete');
+const data = ['One', 'Two', 'Three', 'Four', 'Five'];
+const dataFilter = (value) => {
+return data.filter((item) => {
+  return item.toLowerCase().startsWith(value.toLowerCase());
+});
+};
+</script>
 <?php
 if(isset($_GET['submit']))
 {
