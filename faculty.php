@@ -84,10 +84,10 @@ table
   <img src="img/logo.png" class="logo">
   <ul>
     <li><a href="index.php">Home</a></li>
-    <li><a href="signup.php">Signup</a></li>
+    <li><a href="logout.php">Logout</a></li>
   </ul>
 </div>
-<br><br><br>
+<br><br>
 <div align="center">
 <table>
 <tr>
@@ -120,7 +120,7 @@ table
 <td>'.explode(",", $rows["edu2"])[2].'</td>
 </tr>
 <tr>
-<td colspan="4"><b>Other Details:</b><br>
+<td colspan="4"><br><b>Other Details:</b>
 	<br><b>Research Interests:</b><br>
     '.'-> '.$rows["interests"].'
 	<br><b>Selected Publications:</b><br>
