@@ -11,6 +11,7 @@ echo $query;
 echo $_SESSION['row'];
 $query_run = mysqli_query($con,$query);
 $rows=mysqli_fetch_array($query_run);
+if(mysqli_num_rows($query_run) > 0){
 echo '<!DOCTYPE html>
 <html>
 <head>
@@ -118,4 +119,8 @@ table
 </div>
 </body>
 ';
+}
+else {
+  echo '<script type="text/javascript">alert("No search results found..")</script>';
+}
 ?>
