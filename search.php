@@ -105,7 +105,7 @@ return data.filter((item) => {
 <form action="faculty.php" method="get">
   <div class="input-group wrap">
     <div id="search-autocomplete" class="search form-outline">
-      <input type="text" name="search" id="form1" class="searchterm form-control" />
+      <input type="text" name="search" id="form1" class="searchterm form-control" required/>
       <label class="form-label" for="form1">Search</label>
     </div>
     <button type="submit" name="submit" class="btn btn-primary searchbtn">
@@ -114,7 +114,7 @@ return data.filter((item) => {
   </div>
 </form>
 <?php
-echo '<script type="text/javascript">alert("'.isset($_GET['submit']).'")</script>';
+echo '<script type="text/javascript">alert("'.echo isset($_GET['submit']).'")</script>';
 if(isset($_GET['submit']))
 {
 $name = $_GET['search'];
