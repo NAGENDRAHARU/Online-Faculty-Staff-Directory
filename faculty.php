@@ -64,7 +64,7 @@ table
   text-transform: uppercase;
 }
 .navbar ul li::after{
-  content: '';
+  content: '.';
   height: 3px;
   width: 0;
   background: #3498db;
