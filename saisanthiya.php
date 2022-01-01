@@ -3,7 +3,7 @@ session_start();
 require 'dbconfig/config.php';
 if($_SESSION['status']!="Active")
 {
-    header("location:login1.php");
+    header("location:login.php");
 }
 $search = $_SESSION['search'];
 $query = "select * from professors where name='$search'";
