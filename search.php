@@ -80,15 +80,10 @@ body
 .topnav-right {
   float: right;
 }
-.results{
-
+.heading{
+  position: relative;
 }
 </style>
-<script type="text/javascript">
-  function find(name){
-    console.log(name);
-  }
-</script>
 </head>
 <body>
 <div class="navbar">
@@ -105,18 +100,12 @@ body
 <form action="search.php" method="get">
   <div class="input-group wrap">
     <div id="search-autocomplete" class="search form-outline">
-      <input type="text" name="search" id="form1" class="searchterm form-control" oninput=find(this.value) required/>
+      <input type="text" name="search" id="form1" class="searchterm form-control" required/>
       <label class="form-label" for="form1">Search</label>
     </div>
     <button type="submit" name="submit" class="btn btn-primary searchbtn">
       <i class="fas fa-search"></i>
     </button>
-    <ul class="results">
-      <?php $data = mysqli_fetch_array(mysqli_query($con,"select name from professors"));?>
-      <?php foreach($data as $i){?>
-      <li><?php echo $i["name"]?></li>
-      <?php }?>
-    </ul>
   </div>
 </form>
 <?php
