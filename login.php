@@ -33,19 +33,17 @@ function validateForm()
 			<li><a href="signup.php">Signup</a></li>
 		</ul>
 	</div>
-	<div id="first">
-	<center>
-	<h1>Login</h1>
-	<img src="img/download.png" class="avatar"/>
-	</center>
+ <div class="loginbox">
+	<img src="img/download.png" class="avatar">
+	<h1>Login Here</h1>
 	<form name="myForm" action="login.php" method="post" class="myform" onsubmit="return validateForm()">
-	<label><b>Username:</b></label><br>
-	<input type="text" name="username" class="inputvalues" placeholder="Type your Username" value="<?php if(isset($_COOKIE["Name"])){ echo $_COOKIE["Name"];}?>"><br>
+	<p>Username</p>
+	<input type="text" name="username" class="inputvalues" placeholder="Enter Username" value="<?php if(isset($_COOKIE["Name"])){ echo $_COOKIE["Name"];}?>"><br>
 	<br><label><b>Password:</b></label><br>
-	<input type="password" name="password" class="inputvalues" placeholder="Type your Password" value="<?php if(isset($_COOKIE["Password"])){echo $_COOKIE["Password"];}?>"><br><br>
+	<input type="password" name="password" class="inputvalues" placeholder="Enter Password" value="<?php if(isset($_COOKIE["Password"])){echo $_COOKIE["Password"];}?>"><br><br>
 	<input type="submit" name="submit" value="Login" id="login_btn" ><br>
-	<b>New User?</b>
-	<br><a href="signup.php"><input type="button" name="register" value="Register" id="register_btn"></a>
+	<br><b>New User?</b><br>
+	<br><a href="signup.php"><input type="button" name="register" value="Register"></a>
 	</form>
 	</div>
 </div>

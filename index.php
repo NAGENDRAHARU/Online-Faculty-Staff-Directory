@@ -18,10 +18,10 @@ session_start();
       </div>
       <div class="content">
         <h1>FACULTY STAFF DIRECTORY</h1>
-        <p>Find the professor who suits your research interest.<br>View their particular details such as name, department, courses, area of expertise, and professional interest.</p>
+        <p>Find the professor who has a similar research interest as you.<br>View his/her particular details such as name, department, courses, area of expertise, and professional interest.</p>
         <div>
-          <button type="button"><span></span>Login</button>
-          <button type="button"><span></span>SignUp</button>
+          <a href="login.php"><button type="button"><span></span>Login</button></a>
+          <a href="signup.php"><button type="button"><span></span>SignUp</button></a>
         </div>
       </div>
     </div>

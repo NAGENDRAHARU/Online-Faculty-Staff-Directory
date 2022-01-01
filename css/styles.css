@@ -3,53 +3,6 @@
   padding: 0;
   font-family: sans-serif;
 }
-#first
-{
-	width:500px;
-	margin:0 auto;
-	background:white;
-	padding:5px;
-	border-radius:10px;
-	border:1px solid #2c3e50;
-}
-.avatar
-{
-	width:100px;
-	text-align:center;
-	border-radius:50%;
-}
-.myform
-{
-	width:450px;
-	margin:0 auto;
-	padding:10px;
-}
-.inputvalues
-{
-	margin:0 auto;
-	padding:10px;
-	width:100%;
-}
-#login_btn
-{
-	background-color:#00C853;
-	color:white;
-	padding:5px;
-	width:100%;
-	text-align:center;
-	font-size:18px;
-	font-weight:bold;
-}
-#register_btn
-{
-	background-color:#3F51B5;
-	color:white;
-	padding:5px;
-	width:100%;
-	text-align:center;
-	font-size:18px;
-	font-weight:bold;
-}
 .banner{
   width: 100%;
   height: 100vh;
@@ -92,4 +45,63 @@
 }
 .navbar ul li:hover::after{
   width: 100%;
+}
+.loginbox{
+  width: 320px;
+  height: 420px;
+  background: #000;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+}
+.avatar{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+h1{
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+
+}
+.loginbox p{
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+.loginbox input{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.loginbox input[type="text"], input[type="password"]{
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+.loginbox input[type="submit"], input[type="button"]{
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #fb2525;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+.loginbox input[type="submit"]:hover, input[type="button"]:hover{
+  cursor: pointer;
+  background: #ffc107;
+  color: #000;
 }
