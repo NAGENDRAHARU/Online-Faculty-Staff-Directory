@@ -42,7 +42,7 @@ function validateForm()
 	<br><label><b>Password:</b></label><br>
 	<input type="password" name="password" class="inputvalues" placeholder="Enter Password" value="<?php if(isset($_COOKIE["Password"])){echo $_COOKIE["Password"];}?>"><br><br>
 	<input type="submit" name="submit" value="Login" id="login_btn" ><br>
-	<br><b>New User?</b><br>
+	<b>New User?</b><br>
 	<br><a href="signup.php"><input type="button" name="register" value="Register"></a>
 	</form>
 	</div>

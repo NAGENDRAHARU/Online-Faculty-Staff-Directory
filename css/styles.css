@@ -47,8 +47,8 @@
   width: 100%;
 }
 .loginbox{
-  width: 320px;
-  height: 420px;
+  width: 30%;
+  height: 55%;
   background: #000;
   color: #fff;
   top: 50%;
@@ -71,7 +71,6 @@ h1{
   padding: 0 0 20px;
   text-align: center;
   font-size: 22px;
-
 }
 .loginbox p{
   margin: 0;

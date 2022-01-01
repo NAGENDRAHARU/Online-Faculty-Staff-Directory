@@ -21,23 +21,20 @@
 			<li><a href="login.php">Login</a></li>
 		</ul>
 	</div>
-	<div id="first">
-	<center>
-	<h1>SignUp</h1>
+ <div class="loginbox">
 	<img src="img/faculty.png" class="avatar"/>
-	</center>
+	<h1>SignUp Here</h1>
 	<form class="myform" action="Signup1.php" method="post" name='loginform'>
-	<label><b>Username:</b></label><br>
+	<p>Username:</p><br>
 	<input type="text" name="username" class="inputvalues" placeholder="Type your Username" required><br>
-	<br><label><b>Email:</b></label><br>
+	<br><p>Email:</p><br>
 	<input type="email" name="Email" class="inputvalues" placeholder="Type your Email id" required><br>
-	<br><label><b>Password:</b></label><br>
-	<input type="password" name="password" class="inputvalues"placeholder="Type your Password" required><br><br>
-	<label><b> Confirm Password:</b></label><br>
-	<input type="password" name="cpassword" class="inputvalues"placeholder="Type your Password" required><br><br>
+	<br><p>Password:</p><br>
+	<input type="password" name="password" class="inputvalues" placeholder="Type your Password" required><br><br>
+	<p>Confirm Password:</p><br>
+	<input type="password" name="cpassword" class="inputvalues" placeholder="Type your Password" required><br><br>
 	<input type="submit" name="submit" value="SignUp" id="login_btn" onclick="myFunction(document.loginform.username,document.loginform.password)"><br>
-	 <label><b>Already have an  account?</b></label>
-	<br>
+	<label><b>Already have an  account?</b></label><br>
 	<a href="login.php"><input type="button" name="login" value="Login"  id="register_btn" ></a>
 	</form>
 	</div>
