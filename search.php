@@ -102,7 +102,7 @@ return data.filter((item) => {
 		<h1 style='color:#3498db'>Discover Faculty With Great Profile</h1>
 	</center>
 </div>
-<form action="faculty.php" method="get">
+<form action="search.php" method="get">
   <div class="input-group wrap">
     <div id="search-autocomplete" class="search form-outline">
       <input type="text" name="search" id="form1" class="searchterm form-control" required/>
@@ -114,13 +114,11 @@ return data.filter((item) => {
   </div>
 </form>
 <?php
-$a = isset($_GET['submit']);
-echo $a;
 if(isset($_GET['submit']))
 {
 $name = $_GET['search'];
 $_SESSION['search'] = $name;
-echo '<script type="text/javascript">alert("'.$_SESSION['search'].'")</script>';
+echo $_SESSION['search'];
 }
 ?>
 </body>
