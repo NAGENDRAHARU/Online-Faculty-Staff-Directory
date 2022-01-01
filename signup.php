@@ -25,15 +25,13 @@
 	<img src="img/faculty.png" class="avatar"/>
 	<h1>SignUp Here</h1>
 	<form class="myform" action="Signup1.php" method="post" name='loginform'>
-	<p>Username:</p><br>
+	<p>Username:</p>
 	<input type="text" name="username" class="inputvalues" placeholder="Type your Username" required><br>
-	<br><p>Email:</p><br>
-	<input type="email" name="Email" class="inputvalues" placeholder="Type your Email id" required><br>
-	<br><p>Password:</p><br>
-	<input type="password" name="password" class="inputvalues" placeholder="Type your Password" required><br><br>
-	<p>Confirm Password:</p><br>
-	<input type="password" name="cpassword" class="inputvalues" placeholder="Type your Password" required><br><br>
-	<input type="submit" name="submit" value="SignUp" id="login_btn" onclick="myFunction(document.loginform.username,document.loginform.password)"><br>
+	<p>Password:</p>
+	<input type="password" name="password" class="inputvalues" placeholder="Type your Password" required><br>
+	<p>Confirm Password:</p>
+	<input type="password" name="cpassword" class="inputvalues" placeholder="Type your Password" required><br>
+	<input type="submit" name="submit" value="SignUp" id="login_btn" onclick="myFunction(document.loginform.username,document.loginform.password)">
 	<label><b>Already have an  account?</b></label><br>
 	<a href="login.php"><input type="button" name="login" value="Login"  id="register_btn" ></a>
 	</form>
