@@ -7,11 +7,9 @@ if($_SESSION['status']!="Active")
 }
 $search = $_SESSION['search'];
 $query = "select * from professors where name like '%$search%'";
-echo $query;
-echo $_SESSION['row'];
 $query_run = mysqli_query($con,$query);
-$rows=mysqli_fetch_array($query_run);
 if(mysqli_num_rows($query_run) > 0){
+$rows=mysqli_fetch_array($query_run);
 echo '<!DOCTYPE html>
 <html>
 <head>
@@ -122,5 +120,6 @@ table
 }
 else {
   echo '<script type="text/javascript">alert("No search results found..")</script>';
+  header('location:search.php');
 }
 ?>
