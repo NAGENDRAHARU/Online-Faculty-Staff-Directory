@@ -29,7 +29,7 @@ function validateForm()
 	<div class="navbar">
 		<img src="img/logo.png" class="logo">
 		<ul>
-			<li><a href="login.php">Login</a></li>
+			<li><a href="index.php">Home</a></li>
 			<li><a href="signup.php">Signup</a></li>
 		</ul>
 	</div>

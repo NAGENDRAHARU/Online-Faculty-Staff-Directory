@@ -12,34 +12,35 @@
     };
 </script>
 </head>
-<div class="navbar">
- <a href="index.php">Home</a>
- <a href="#contact">Contact</a>
- <div class="topnav-right">
- <a href="signup.php">Signup</a>
- <a href="login.php">Login</a>
- </div>
-</div>
 <body>
-<div id="first">
-<center>
-<h1>SignUp</h1>
-<img src="img/faculty.png" class="avatar"/>
-</center>
-<form class="myform" action="Signup1.php" method="post" name='loginform'>
-<label><b>Username:</b></label><br>
-<input type="text" name="username" class="inputvalues" placeholder="Type your Username" required><br>
-<br><label><b>Email:</b></label><br>
-<input type="email" name="Email" class="inputvalues" placeholder="Type your Email id" required><br>
-<br><label><b>Password:</b></label><br>
-<input type="password" name="password" class="inputvalues"placeholder="Type your Password" required><br><br>
-<label><b> Confirm Password:</b></label><br>
-<input type="password" name="cpassword" class="inputvalues"placeholder="Type your Password" required><br><br>
-<input type="submit" name="submit" value="SignUp" id="login_btn" onclick="myFunction(document.loginform.username,document.loginform.password)"><br>
- <label><b>Already have an  account?</b></label>
-<br>
-<a href="login.php"><input type="button" name="login" value="Login"  id="register_btn" ></a>
-</form>
+<div class="banner">
+	<div class="navbar">
+		<img src="img/logo.png" class="logo">
+		<ul>
+			<li><a href="index.php">Home</a></li>
+			<li><a href="login.php">Login</a></li>
+		</ul>
+	</div>
+	<div id="first">
+	<center>
+	<h1>SignUp</h1>
+	<img src="img/faculty.png" class="avatar"/>
+	</center>
+	<form class="myform" action="Signup1.php" method="post" name='loginform'>
+	<label><b>Username:</b></label><br>
+	<input type="text" name="username" class="inputvalues" placeholder="Type your Username" required><br>
+	<br><label><b>Email:</b></label><br>
+	<input type="email" name="Email" class="inputvalues" placeholder="Type your Email id" required><br>
+	<br><label><b>Password:</b></label><br>
+	<input type="password" name="password" class="inputvalues"placeholder="Type your Password" required><br><br>
+	<label><b> Confirm Password:</b></label><br>
+	<input type="password" name="cpassword" class="inputvalues"placeholder="Type your Password" required><br><br>
+	<input type="submit" name="submit" value="SignUp" id="login_btn" onclick="myFunction(document.loginform.username,document.loginform.password)"><br>
+	 <label><b>Already have an  account?</b></label>
+	<br>
+	<a href="login.php"><input type="button" name="login" value="Login"  id="register_btn" ></a>
+	</form>
+	</div>
 </div>
  <script>
             function myFunction(x,y) {
