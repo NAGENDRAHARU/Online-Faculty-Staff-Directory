@@ -28,8 +28,8 @@ function validateForm()
  <a href="index.php">Home</a>
  <a href="#contact">Contact</a>
  <div class="topnav-right">
- <a href="Signup1.php">Signup</a>
- <a href="login1.php">Login</a>
+ <a href="signup.php">Signup</a>
+ <a href="login.php">Login</a>
  </div>
 </div>
 <body id="bod">
@@ -38,14 +38,14 @@ function validateForm()
 <h1>Login</h1>
 <img src="img/download.png" class="avatar"/>
 </center>
-<form name="myForm" action="login1.php" method="post" class="myform" onsubmit="return validateForm()">
+<form name="myForm" action="login.php" method="post" class="myform" onsubmit="return validateForm()">
 <label><b>Username:</b></label><br>
 <input type="text" name="username" class="inputvalues" placeholder="Type your Username" value="<?php if(isset($_COOKIE["Name"])){ echo $_COOKIE["Name"];}?>"><br>
 <br><label><b>Password:</b></label><br>
 <input type="password" name="password" class="inputvalues" placeholder="Type your Password" value="<?php if(isset($_COOKIE["Password"])){echo $_COOKIE["Password"];}?>"><br><br>
 <input type="submit" name="submit" value="Login" id="login_btn" ><br>
 <b>New User?</b>
-<br><a href="Signup1.php"><input type="button" name="register" value="Register" id="register_btn"></a>
+<br><a href="signup.php"><input type="button" name="register" value="Register" id="register_btn"></a>
 </form>
 </div>
 <?php

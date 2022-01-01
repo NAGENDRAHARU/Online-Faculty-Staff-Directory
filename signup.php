@@ -5,10 +5,10 @@
 <html>
 <head>
 <title>SignUp</title>
-<link rel="stylesheet" href="css/styles1.css">
+<link rel="stylesheet" href="css/styles.css">
 <script type="text/javascript">
 	 document.getElementById("register_btn").onclick = function () {
-        location.href = "/login1.php";
+        location.href = "/login.php";
     };
 </script>
 </head>
@@ -16,8 +16,8 @@
  <a href="index.php">Home</a>
  <a href="#contact">Contact</a>
  <div class="topnav-right">
- <a href="Signup1.php">Signup</a>
- <a href="login1.php">Login</a>
+ <a href="signup.php">Signup</a>
+ <a href="login.php">Login</a>
  </div>
 </div>
 <body id="bod">
@@ -38,7 +38,7 @@
 <input type="submit" name="submit" value="SignUp" id="login_btn" onclick="myFunction(document.loginform.username,document.loginform.password)"><br>
  <label><b>Already have an  account?</b></label>
 <br>
-<a href="login1.php"><input type="button" name="login" value="Login"  id="register_btn" ></a>
+<a href="login.php"><input type="button" name="login" value="Login"  id="register_btn" ></a>
 </form>
 </div>
  <script>
@@ -87,7 +87,7 @@
 							}
 							if($query_run)
 							{
-								header('location:login1.php');
+								header('location:login.php');
 							}
 							else
 							{

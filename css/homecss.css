@@ -3,7 +3,7 @@ body {
    background-image: url('/img/back.jpg');
    background-size: cover;
    position: absolute;
-    }
+}
 .navbar {
   overflow: hidden;
   position: fixed;
