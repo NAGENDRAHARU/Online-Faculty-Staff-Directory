@@ -31,22 +31,18 @@
 	<input type="password" name="password" class="inputvalues" placeholder="Type your Password" required><br>
 	<p>Confirm Password:</p>
 	<input type="password" name="cpassword" class="inputvalues" placeholder="Type your Password" required><br>
-	<input type="submit" name="submit" value="SignUp" id="login_btn" onclick="myFunction(document.loginform.username,document.loginform.password,document.loginform.cpassword)">
+	<input type="submit" name="submit" value="SignUp" id="login_btn" onclick="myFunction(document.loginform.password,document.loginform.cpassword)">
 	<label><b>Already have an  account?</b></label><br>
 	<a href="login.php"><input type="button" name="login" value="Login"  id="register_btn" ></a>
 	</form>
 	</div>
 </div>
  <script>
-            function myFunction(x,y,z) {
+            function myFunction(y,z) {
 		 if(y == z)
 		 {
-	            alert('Your name and password has been accepted, Login now..'); 
+	            alert('Your name and password have been accepted, Login now..'); 
 		    return true;
-		 }
-		 else{
-	            alert('Your password and confirm password does not match..'); 
-		    return false;
 		 }
             }
    </script>
@@ -60,7 +56,7 @@
 
 				if($password==$cpassword)
 				{
-					$query = "select * from users where username='$username'";
+				$query = "select * from users where username='$username'";
 				$query_run = mysqli_query($con,$query);
 				if($query_run)
 					{
@@ -94,7 +90,7 @@
 				}
 				else
 				{
-					echo '<script type="text/javascript">alert("Password and Confirm Password do not match")</script>';
+					echo '<script type="text/javascript">alert("Password and Confirm Password does not match")</script>';
 				}
 
 			}
