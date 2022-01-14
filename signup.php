@@ -39,19 +39,7 @@
 </div>
  <script>
             function myFunction(x,y) {
-                // If x is not an alphabet or number
-                var letters = /^[A-Za-z0-9]+$/;
-                var letters1 =  /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
-                if(x.value.match(letters) && y.value.match(letters1))
-                {
-                    alert('Your name and password has been accepted');
-                    return true;
-                }
-                else
-                {
-                    alert('Please input alphabet and numeric characters only');
-                    return false;
-                }
+		alert('Your name and password has been accepted, Login now..');
             }
    </script>
 <?php
