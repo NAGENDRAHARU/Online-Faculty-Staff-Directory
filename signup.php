@@ -24,7 +24,7 @@
  <div class="loginbox">
 	<img src="img/faculty.png" class="avatar"/>
 	<h1>SignUp Here</h1>
-	<form class="myform" action="Signup1.php" method="post" name='loginform'>
+	<form class="myform" action="signup.php" method="post" name='loginform'>
 	<p>Username:</p>
 	<input type="text" name="username" class="inputvalues" placeholder="Type your Username" required><br>
 	<p>Password:</p>
