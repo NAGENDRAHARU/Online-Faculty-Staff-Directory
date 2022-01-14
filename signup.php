@@ -31,21 +31,12 @@
 	<input type="password" name="password" class="inputvalues" placeholder="Type your Password" required><br>
 	<p>Confirm Password:</p>
 	<input type="password" name="cpassword" class="inputvalues" placeholder="Type your Password" required><br>
-	<input type="submit" name="submit" value="SignUp" id="login_btn" onclick="myFunction(document.loginform.password,document.loginform.cpassword)">
+	<input type="submit" name="submit" value="SignUp" id="login_btn">
 	<label><b>Already have an  account?</b></label><br>
 	<a href="login.php"><input type="button" name="login" value="Login"  id="register_btn" ></a>
 	</form>
 	</div>
 </div>
- <script>
-            function myFunction(y,z) {
-		 if(y == z)
-		 {
-	            alert('Your name and password have been accepted, Login now..'); 
-		    return true;
-		 }
-            }
-   </script>
 <?php
 			if(isset($_POST['submit']))
 			{
@@ -62,7 +53,7 @@
 					{
 						if(mysqli_num_rows($query_run)>0)
 						{
-							echo '<script type="text/javascript">alert("This Username Already exists.. Please try another username!")</script>';
+							echo '<script type="text/javascript">alert("This Username Already exists.. \nPlease try another username!")</script>';
 						}
 						else
 						{
@@ -70,16 +61,12 @@
 							$query_run= mysqli_query($con,$query);
 							if($query_run)
 							{
-								echo '<script type="text/javascript">alert("User Registered.. Welcome....")</script>';
-
-							}
-							if($query_run)
-							{
+								echo '<script type="text/javascript">alert("User Registered.. \nWelcome....")</script>';
 								header('location:login.php');
 							}
 							else
 							{
-								echo '<p class="bg-danger msg-block">Registration Unsuccessful due to server error. Please try later</p>';
+								echo '<p class="bg-danger msg-block">Registration Unsuccessful due to server error. \nPlease try later</p>';
 							}
 						}
 					}
@@ -90,7 +77,7 @@
 				}
 				else
 				{
-					echo '<script type="text/javascript">alert("Password and Confirm Password does not match")</script>';
+					echo '<script type="text/javascript">alert("Password and Confirm Password does not match..")</script>';
 				}
 
 			}
